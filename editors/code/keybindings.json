@@ -1,0 +1,96 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  {
+    "key": "ctrl+n ctrl+e",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "f2",
+    "command": "renameFile"
+  },
+  {
+    "key": "ctrl+n ctrl+r",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+ctrl+m",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+down",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "explorer.openAndPassFocus",
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "explorer.openAndPassFocus",
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "explorer.openToSide",
+        "explorer.openAndPassFocus",
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.quickOpenNavigateNextInViewPicker",
+    "when": "inQuickOpen && inViewPicker"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.quickOpenView"
+  },
+  {
+    "key": "alt+r",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+cmd+w",
+    "command": "-workbench.action.toggleTabsVisibility"
+  }
+]

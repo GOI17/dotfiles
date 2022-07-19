@@ -1,0 +1,144 @@
+{
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 14,
+  "editor.fontFamily": "CaskaydiaCove Nerd Font",
+  "editor.fontLigatures": false,
+  "editor.lineHeight": 22,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "explorer.confirmDelete": false,
+  "search.sortOrder": "type",
+  "settingsSync.keybindingsPerPlatform": false,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Andromeda",
+  "oneDarkPro.vivid": true,
+  "window.openFoldersInNewWindow": "on",
+  "window.openFilesInNewWindow": "off",
+  // "files.autoSaveDelay": 1000,
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "workbench.tree.indent": 16,
+  "workbench.editor.enablePreview": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.editor.labelFormat": "short",
+  // "workbench.tree.renderIndentGuides": "always",
+  // Spell Config
+  "cSpell.language": "en,es",
+  "cSpell.showStatus": true,
+  "cSpell.ignorePaths": [
+    "node_modules",
+    "build",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git"
+  ],
+  // Eslint Config
+  "eslint.alwaysShowStatus": false,
+  // Redhat Config
+  "redhat.telemetry.enabled": false,
+  // Languages Config
+  "[javascript]": {
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.rulers": [],
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "[javascriptreact]": {
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.rulers": [],
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[kotlin]": {},
+  "[ruby]": {},
+  "[java]": {},
+  "[python]": {},
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop", // use rubocop for formatting
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "remote.SSH.remotePlatform": {
+    "developing.greenpacecapital.com": "linux"
+  },
+  "files.autoSave": "off",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editorAssociations": {
+    "*.pdf": "default"
+  },
+  "python.defaultInterpreterPath": "/bin/python",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.layoutControl.type": "menu",
+  "workbench.layoutControl.enabled": false,
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+  "vscode_custom_css.imports": [
+    "https://raw.githubusercontent.com/GOI17/custom-vscode-css/main/custom.css"
+  ],
+  "workbench.sideBar.location": "right",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.showTabs": false,
+  "gitlens.mode.active": "zen",
+  "workbench.editor.closeOnFileDelete": true,
+  "customizeUI.titleBar": "frameless",
+  "window.nativeTabs": true,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false
+}
