@@ -23,7 +23,7 @@ alias gps="git push"
 alias gpsf="git push --force"
 alias gpl="git pull --rebase --autostash"
 alias gb="git branch"
-alias gpsup="git push -u origin '$(gb --show-current)'"
+alias gpsup='git push -u origin "$(gb --show-current)"'
 alias gl='$DOTLY_PATH/bin/dot git pretty-log'
 
 # Utils
