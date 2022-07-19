@@ -16,7 +16,7 @@
     ~/bin/make: /opt/homebrew/bin/gmake
     ~/bin/sed: /opt/homebrew/bin/gsed
     ~/bin/touch: /opt/homebrew/bin/gtouch
-    ~/bin/zsh: /opt/homebrew/bin/zsh
-    ~/Library/Application\ Support/Code/User/keybindings.json: /editors/code/keybindings.json
-    ~/Library/Application\ Support/Code/User/settings.json: /editors/code/settings.json
-    ~/Library/Application\ Support/Code/User/snippets: /editors/code/snippets
+    ~/bin/zsh: /opt/homebrew/bin/zsh 
+    '~/Library/Application Support/Code/User/keybindings.json': editors/code/keybindings.json
+    '~/Library/Application Support/Code/User/settings.json': editors/code/settings.json
+    '~/Library/Application Support/Code/User/snippets': editors/code/snippets
