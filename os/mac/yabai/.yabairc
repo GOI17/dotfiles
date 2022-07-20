@@ -1,0 +1,80 @@
+# the scripting-addition must be loaded manually if
+# you are running yabai on macOS Big Sur. Uncomment
+# the following line to have the injection performed
+# when the config is executed during startup.
+#
+# for this to work you must configure sudo such that
+# it will be able to run the command without password
+
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+# brew services restart spacebar
+
+# Custom configurations
+# more info about settings visit:
+# https://github.com/koekeishiya/yabai/wiki/Configuration#configuration-file
+
+# Override default layout (default: float, options: float, bsp)
+yabai -m config layout bsp
+
+# Set all padding and gaps to 20pt (default: 0)
+yabai -m config top_padding    37
+yabai -m config bottom_padding 5
+yabai -m config left_padding   5
+yabai -m config right_padding  5
+yabai -m config window_gap     5
+
+# auto balance on or off (default: off)
+yabai -m config auto_balance on
+
+# set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
+yabai -m config focus_follows_mouse autofocus
+
+# set mouse follows focus mode (default: off)
+yabai -m config mouse_follows_focus on
+
+# floating windows are always on top (default: off)
+yabai -m config window_topmost on
+
+# modify window shadows (default: on, options: on, off, float)
+# example: show shadows only for floating windows
+yabai -m config window_shadow off
+yabai -m config window_border on
+yabai -m config window_border_width 4
+
+# window opacity (default: off)
+# example: render all unfocused windows with 90% opacity
+yabai -m config window_opacity off
+
+# window border (default: off)
+# - width has unit 1pt
+# - colors for borders are in the format AARRGGBB (alpha, red, green, blue) 
+#    as a hexadecimal value
+# - active means focused window, normal means unfocused window, 
+#    insert means selected window
+yabai -m config active_window_border_color   0xff8E83B8
+yabai -m config normal_window_border_color   0xff51425C
+yabai -m config insert_window_border_color   0xff8E83B8
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.90
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 on
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+
+# float system preferences
+yabai -m rule --add app="System\ Preferences" sticky=on manage=off border=off
+yabai -m rule --add app="Installer" manage=off border=off
+yabai -m rule --add title="^Calculator$" manage=off
+yabai -m rule --add title="^About$" manage=off
+yabai -m rule --add title="^Bitwarden$" manage=off
+yabai -m rule --add title="^Zscaler Client Connector$" manage=off
+yabai -m rule --add title="^Exit Zscaler Client Connector$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+
+yabai -m signal --add event=window_focused action="sketchybar -m --trigger window_focus &> /dev/null"
+yabai -m signal --add event=system_woke action="brew services restart sketchybar"
+# SPACEBAR_HEIGHT=$(sketchybar --query bar height)
+# yabai -m config external_bar all:$SPACEBAR_HEIGHT:0

@@ -17,3 +17,6 @@
     ~/.zshenv: shell/zsh/.zshenv
     ~/.zshrc: shell/zsh/.zshrc
     ~/.inputrc: shell/.inputrc
+    ~/.alacritty.yml: terminals/alacritty/.alacritty.yml
+    ~/.tmux.conf: shell/tmux/.tmux.conf
+    ~/.tmux: shell/tmux/.tmux
