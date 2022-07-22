@@ -74,7 +74,7 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain InitialKeyRepeat -int 13
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -218,7 +218,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock showhidden -bool true
 
 # Dock in the bottom
-defaults write com.apple.dock orientation -string bottom
+defaults write com.apple.dock orientation -string left
 
 # Disable recent applications
 defaults write com.apple.dock show-recents -bool false

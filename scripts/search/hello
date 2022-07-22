@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+source "${DOTLY_PATH}/scripts/core/_main.sh"
+
+dot::hello() {
+    echo 'Hello from hello()'
+}
+
+dot::hello
